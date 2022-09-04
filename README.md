@@ -1,7 +1,7 @@
 
 # Enersinc Desarrollador Junior
 
-Below a description about this test, I hope it solves all request suggested by you.
+Below a description to run this test, I hope it solves all request suggested by you.
 
 ## Authors
 
