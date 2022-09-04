@@ -1,7 +1,7 @@
 import React from "react";
 import { useUsers } from "../hooks/useUsers";
 import { UserRow } from "../components/UserRow";
-
+import { NoUsers } from "../components/NoUsers";
 export const UsersPage = () => {
   const { users } = useUsers();
   return (
@@ -19,9 +19,15 @@ export const UsersPage = () => {
           </tr>
         </thead>
         <tbody>
-          {users.map((user) => (
-            <UserRow key={user.email} user={user} />
-          ))}
+          {
+            users.length > 0 ?  
+            users.map((user) => (
+              <UserRow key={user.email} user={user} />
+            )
+          ):
+          (
+            <NoUsers   />
+          )}
         </tbody>
       </table>
     </div>
