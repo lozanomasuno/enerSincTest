@@ -9,7 +9,7 @@ export const useUsers = () => {
   }, []);
 
   const getUsers = async () => {
-    const resp = await usersApi.get("https://gorest.co.in/public/v2/users");
+    const resp = await usersApi.get('https://gorest.co.in/public/v2/users');
     setUsers(resp.data);
   };
 
