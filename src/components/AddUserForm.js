@@ -12,10 +12,9 @@ export const AddUserForm = () => {
     const adduser = (user)=>{ 
         user.id = uuidv4();
         console.log(users);
-        //e.target.reset();
     }
     return(     
-       <form className="w-50 p-3" onSubmit={ handleSubmit(adduser) }>
+       <form className="p-3 col-xs-12" onSubmit={ handleSubmit(adduser) }>
             <label>name</label>
             <input type="text" name="name" />
             
@@ -35,7 +34,7 @@ export const AddUserForm = () => {
                 <option>Inactive</option>
             </select>
 
-            <button className="container-fluid h-100 w-25 ">
+            <button className="container-fluid h-100 w-50 p-3 m-3 d-flex justify-content-center">
                 Add new user
             </button>
        </form>

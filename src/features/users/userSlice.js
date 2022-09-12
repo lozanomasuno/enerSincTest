@@ -1,11 +1,13 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 export const userSlice = createSlice({
     name: 'users',
-    initialState: [],
+    initialState: {},
     reducers: {
-      
+      increment: (state) =>{
+        state.counter += 1;
+      }
     }
 })
 
-export default userSlice.reducer
+export const { increment } = userSlice.actions;

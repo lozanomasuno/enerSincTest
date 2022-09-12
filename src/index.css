@@ -1,7 +1,6 @@
- html {
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  text-transform: capitalize;
+:root {
+  --color-primary: #d1d1d1;
+  --color-secondary: aliceblue;
 }
 
 /* Sections
@@ -1036,9 +1035,44 @@ table th {
   }
 }
 
-/*
- * Navigation
- */
-/**
- * Layout
- */
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-options .sub-menu-options {
+  width: 145px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+
+.menu-options .sub-menu-options:hover {
+  background: var(--color-primary);
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-options .sub-menu-options:active {
+  background: var(--color-primary);
+  color: #fff;
+  cursor: pointer;
+  fill: #fff;
+}
+
+
+.active{
+  background-color: rgb(167, 233, 250);
+  color: #fff;
+}
+
+
