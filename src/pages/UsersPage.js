@@ -2,7 +2,6 @@ import React from "react";
 import { useUsers } from "../hooks/useUsers";
 import { UserRow } from "../components/UserRow";
 import { NoUsers } from "../components/NoUsers";
-import { v4 as uuidv4 } from 'uuid';
 
 export const UsersPage = () => {
   const { users } = useUsers();
